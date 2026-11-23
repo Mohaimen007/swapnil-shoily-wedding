@@ -260,21 +260,32 @@ h1 {
 
 /* NEW COUPLE CARTOON IMAGE */
 
+
+/* COUPLE CARTOON IMAGE */
+
 .hero-image {
-    display: block;
-    width: 100%;
-    max-width: 350px;
-    height: 350px;
-    object-fit: contain;
-    object-position: center;
-    margin: 0 auto;
-  animation:float 5s ease-in-out infinite;
+  display: block;
+  width: min(90%, 480px);
+  height: auto;
+  max-height: 490px;
+  object-fit: contain;
+  object-position: center;
+  margin: 12px auto 5px;
+  animation: float 5s ease-in-out infinite;
 }
 
 @keyframes float {
-  0%,100% { transform:translateY(0); }
-  50% { transform:translateY(-9px); }
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-9px); }
 }
+
+.hero-image {
+  width: min(96%, 420px);
+  max-height: 430px;
+  height: auto;
+  object-fit: contain;
+}
+
 
 .date-pill {
   display:inline-block;
@@ -835,6 +846,7 @@ musicBtn.addEventListener('click', () => {
 
 </body>
 </html>
+
 
 
 
